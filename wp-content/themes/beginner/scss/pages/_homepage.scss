@@ -1,0 +1,284 @@
+
+.post-link {
+	display: block;
+	position: relative;
+}
+.featured-newsletter {
+	margin: 0 0 20px;
+	text-align: center;
+
+	.widget-content {
+		background-color: #f0f0f0;
+		padding: 30px 20px 40px;
+
+		h1,h2,h3,h4,h5,h6 {
+			font-size: 20px;
+			margin-bottom: 10px;
+		}
+	}
+
+	.header {
+		background-color: #368dd5;
+		color: #fff;
+		font-size: 22px;
+		padding: 10px 20px;
+		position: relative;
+		text-transform: uppercase;
+	}
+
+	p {
+		font-size: 16px;
+		margin-bottom: 20px;
+		padding: 0 20px;
+	}
+	input {
+		background-color: #fff;
+		color: #333;
+		font-size: 16px;
+		width: 200px;
+		box-shadow: none;
+	    -webkit-box-shadow: none;
+	    -moz-box-shadow: none;
+	    &:hover,
+	    &:focus {
+	    	background-color: #fff;
+	    }
+	}
+	button,
+	input[type="submit"] {
+		background-color: #52b043;
+		color: #fff;
+		width: 200px;
+		padding: 0;
+	}
+}
+
+
+.grid-posts {
+	background-color: #fff;
+	margin-bottom: 20px;
+	.grid-loop {
+		border: 1px solid #e6e6e6;
+		padding: 20px;
+	}
+	.hentry.grid {
+		float: left;
+		margin: 0 20px 20px 0;
+
+		&.last {
+			margin-right: 0;
+		}
+		.entry-thumbnail {
+			width: 100%;
+			height: auto;
+			line-height: 1;
+			margin-bottom: 3px;
+		}
+		.entry-meta {
+			font-size: 13px;
+			.entry-category {
+				display: block;
+				margin-bottom: 5px;
+				a {
+					color: #52b043;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+	.more-link {
+		margin-top: 10px;
+		text-align: center;
+	}
+}
+.grid-2-col {
+	.hentry.grid {
+		width: 319px;
+
+		.layout-1c & {
+			width: 49%;
+		}
+		.entry-title {
+			font-size: 20px;
+		}
+	}
+
+}
+.grid-3-col {
+	.hentry.grid {
+		width: 206px;
+
+		.layout-1c & {
+			width: 32%;
+		}
+		.entry-title {
+			font-size: 20px;
+		}	
+	}
+	&.deals-entries {
+		.hentry.grid {
+			.post-link {
+				width: 100%;
+				height: 150px;
+				border-radius: 3px;
+				border: 1px solid #f0f0f0;
+				margin: 0 0 15px 0;    
+			}
+			.entry-thumbnail {
+			    width: 100%;
+			    display: block;
+			    position: absolute;
+			    margin: auto;
+			    top: 0;
+			    left: 0;
+			    right: 0;
+			    bottom: 0;
+			    max-width: 170px;
+			    max-height: 120px;
+			    width: auto;
+			    height: auto;
+			    height: auto;
+			}			
+		}
+	}	
+}
+.heading {
+	background-color: #fff;
+	border: 1px solid #e6e6e6;
+	border-bottom: none;
+	color: $accent-1;
+	font-size: 18px;
+	line-height: 1;
+	padding: 16px 20px 14px;
+	text-transform: uppercase;
+	span {
+		color: #333;
+		a {
+			color: #333;
+		}
+	}
+}
+
+.content-loop {
+
+	.hentry {
+		background-color: #fff;
+		border: 1px solid #e6e6e6;
+		width: 100%;
+		margin-bottom: 20px;
+		padding: 20px 20px 22px 20px;
+		.post-link {
+			display: block;
+		}
+		.entry-title {
+			font-size: 32px;
+			margin-bottom: 15px;
+			a {
+				&:hover {
+				}
+			}
+		}
+		.entry-summary {
+			line-height: 1.75;
+			margin-bottom: 20px;
+		}
+	}
+}
+.content-loop,
+.single #content,
+.page #content {
+	.entry-meta {
+		font-size: 13px;
+		margin-bottom: 20px;
+		a {
+			color: #999;
+			&:hover {
+				color: #333;
+			}
+		}
+		.entry-category {
+			a {
+				color: #52b043;
+				font-weight: bold;
+			}
+		}
+		.post-author {
+			position: relative;
+			img {
+				width: 20px;
+				height: auto;
+				margin: 0 5px 0 0;
+				position: relative;
+				top: 3px;
+			}
+		}
+		.sep {
+			margin: 0 5px;
+		}
+	}
+	.entry-image {
+		margin-bottom: 15px;
+		&.video {
+			video {
+				max-width: 100%;
+			}
+			iframe,
+			embed,
+			object {
+				max-width: 100%;
+			}
+		}
+		&.audio {
+			iframe {
+				height: 165px;
+			}
+		}
+		&.video, &.audio {
+			margin-bottom: 25px;
+		}
+	}
+
+}
+.more-link {
+	a {
+		background-color: $accent-1;
+		border-radius: 2px;
+		color: #fff;
+		display: inline-block;
+		font-size: 18px;
+		font-family: $heading-font-family;
+		padding: 8px 25px;
+		&:hover {
+			background-color: #333;
+			color: #fff;
+		}
+	}
+}
+.post-icon {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -25px 0 0 -18px;
+    height: 36px;
+    line-height: 36px;
+    width: 36px;
+    padding: 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+#primary {
+	float: left;
+	width: 700px;
+}
+.entry-summary,
+.entry-content {
+	font-family: $content-font-family;
+	a:hover {
+		color: #333;
+	}
+}

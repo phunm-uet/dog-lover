@@ -1,0 +1,85 @@
+.archive {
+	#content {
+		background-color: #fff;
+		border: 1px solid #e6e6e6;
+		padding: 20px;
+		position: relative;
+	}
+}
+.pagination {
+	background-color: #fff;
+	font-family: $heading-font-family;
+	width: 100%;
+	margin: -21px 0 20px 0;
+	padding: 12px 30px;
+	border: 1px solid #e6e6e6;
+	text-align: center;
+
+	.page-numbers {
+		color: #333;
+		display: inline-block;
+		font-size: 16px;
+		font-weight: bold;
+		height: 32px;
+		line-height: 32px;
+		padding: 0 10px;
+		text-transform: uppercase;
+		&:hover {
+			color: $accent-1;
+		}
+		&.current {
+			color: $accent-1;
+			text-decoration: underline;
+		}
+	}
+
+	.prev {
+		background-color: #f0f0f0;
+		float: left;
+		font-weight: normal;
+		padding: 0 15px 0 10px;
+		position: relative;
+		&:after {
+		    border-top: 16px solid transparent;
+		    border-right: 11px solid #f0f0f0;
+		    border-bottom: 16px solid transparent;
+		    left: -11px;
+		}
+	}
+
+	.next {
+		background-color: $accent-1;
+		color: #fff;
+		float: right;
+		font-weight: normal;
+		padding: 0 10px 0 15px;
+		position: relative;
+
+		&:hover {
+			background-color: #444;
+			color: #fff;
+			&:after {
+				border-left-color: #444;
+			}
+		}
+		&:after {
+		    border-top: 16px solid transparent;
+		    border-left: 11px solid $accent-1;
+		    border-bottom: 16px solid transparent;
+		    right: -11px;
+		    transition: all 200ms ease-in-out 0s;
+		}
+
+	}
+	.next:after,
+	.prev:after {
+	    content: '';
+	    width: 0;
+	    height: 0;
+	    position: absolute;
+	    top: 0;
+	    font-size: 0;
+	    line-height: 0;
+	    text-indent: -4000px;
+	}
+}

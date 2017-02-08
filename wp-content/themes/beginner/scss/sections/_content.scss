@@ -1,0 +1,255 @@
+/* Site Content */
+.site-main {
+	padding: 20px 0;
+}
+.container {
+	margin: 0 auto;
+	width: 1060px;
+}
+.wrap {
+	padding: 0 20px;
+}
+.page,
+.single {
+	#primary {
+	}
+}
+.breadcrumbs {
+	margin-bottom: 30px;
+	text-align: center;
+	span {
+		border-bottom: 1px solid #dfdfdf;
+		color: #999;
+		display: inline-block;
+		font-size: 10px;
+		margin-bottom: 10px;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+	}
+	h1 {
+		font-size: 28px;
+	}
+}
+
+.hentry .entry-title {
+	margin-bottom: 10px;
+}
+
+.entry-title {
+	a:link,
+	a:visited {
+		color: #333;
+	}
+	a:hover {
+		color: $accent-1;
+	}
+}
+.entry-meta {
+	a:hover {
+		color: #333 !important;
+	}
+}
+.format-aside .entry-title {
+	display: none;
+}
+.format-link .entry-title a:after {
+    margin-left: 5px;
+    font-family: FontAwesome;
+    font-size: 24px;
+    content: "\f08e";
+}
+
+.owl-theme .owl-controls {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	margin-top: -20px;
+	.owl-buttons {
+		div {
+			font-size: 16px;
+			float: left;
+			margin: 0;
+			padding: 14px 8px;
+			opacity: 1;
+			color: $body-font-color;
+			border-radius: 0;
+			background-color: #fff;
+			&.owl-next {
+				float: right;
+			}
+		}
+	}
+}
+
+.widget .entry-date {
+	margin-bottom: 0;
+}
+
+.searchform #search {
+	width: 60%;
+}
+
+/**
+ * 6.2 Featured Content
+ * -----------------------------------------------------------------------------
+ */
+
+.entry-meta {
+	color: #999;
+}
+
+.page-title {
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom:20px;
+}
+
+.black {
+	a:link,
+	a:visited {
+		color: #333;
+	}
+	a:hover {
+		color: #141414;
+	}
+}
+
+.dropcap {
+	float: left;
+	font-size: 58px;
+	line-height: 54px;
+	padding-top: 4px;
+	padding-right: 10px;
+	margin-top: -2px;
+}
+
+.btn {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/* Deals Page */
+.deals-nav {
+	border-bottom: 1px dotted #ddd;
+	margin: 30px 0;
+	padding-bottom: 5px;
+	ul {
+		margin: 0;
+		padding: 0;
+		li {
+			font-family: $heading-font-family;
+			font-weight: bold;
+			float: left;
+			list-style: none;
+			margin: 0 15px 15px 0;
+			padding: 0;
+			&.section-text {
+				display: inline-block;
+				padding: 3px 0;
+			}
+			a {
+				background-color: #f0f0f0;
+				border-radius: 3px;
+				color: $accent-1;
+				display: inline-block;
+				padding: 3px 8px;
+			}
+			a:hover,
+			&.current a,
+			&.active a {
+				background-color: $accent-1;
+				color: #fff;
+			}
+		}
+	}
+}
+
+.deals-loop {
+	.hentry {
+		border-bottom: 1px dotted #ddd;
+		margin-bottom: 20px;
+		padding-bottom: 20px;
+		&.last {
+			border-bottom: none;
+			margin-bottom: 0;
+			padding-bottom: 5px;
+		}
+		.thumbnail-link {
+			border: 1px solid #f0f0f0;
+			border-radius: 3px;
+			float: left;
+			display: block;
+			margin: 0 20px 0 0;
+			width: 200px;
+			height: 150px;
+			position: relative;
+		}
+		.entry-thumbnail {
+		    display: block;
+		    position: absolute;
+		    margin: auto;
+		    top: 0;
+		    left: 0;
+		    right: 0;
+		    bottom: 0;
+		    max-width: 170px;
+		    max-height: 120px;
+		    width: auto;
+		    height: auto;
+		}
+		.entry-title {
+			font-size: 22px;
+			margin-bottom: 15px;
+		}
+		.entry-summary {
+			display: table;
+		}
+	}
+}
+
+.page-deals {
+	.pagination {
+		margin-top: -1px;
+	}
+}
+.single-deals {
+	#content {
+		margin-bottom: 20px;
+	}
+}
+.coupon-area {
+	margin: 10px 0 25px;
+	strong {
+		font-family: $heading-font-family;
+		font-size: 20px;
+		margin-right: 20px;
+	}
+	form {
+		display: inline;
+		display: inline-block;
+	}
+	.coupon-code {
+		background: url('assets/img/scissors.png') no-repeat 13px center;
+		border: 2px dashed #52b043;
+		border-radius: 5px;
+		color: #333;
+		display: inline-block;
+		height: 40px;
+		line-height: 36px;
+		padding: 0 15px 0 40px;
+		font-size: 15px;
+		font-weight: bold;
+		height: auto !important;
+		box-shadow: none;
+	    -webkit-box-shadow: none;
+		&:hover {
+			border-style: solid;
+			color: #333;
+		}
+	}
+	span {
+		color: #777;
+		font-size: 13px;
+		margin-left: 15px;
+	}
+}
